@@ -1,55 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap");
 
 body {
-  background: linear-gradient(135deg, #0a0a0a, #111827, #000000);
-}
-
-.name {
-  color: #00bfff;
-  font-size: 2rem;
-  margin: 1rem;
-  font-family: "Exo 2", sans-serif;
-}
-
-.name-part {
-  color: #39ff14;
+  background-color: #0b0f1c;
 }
 
 main {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.content {
+  width: 80%;
+  justify-content: stretch;
+}
+
 .input-section {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
+  margin: 1rem;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #111827;
+  border: 2px solid #273444;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .textBox,
-.numberBox {
+.numberBox,
+.operation-selector {
   padding: 0.5rem;
-  font-size: 1.5rem;
-  background-color: #424141;
+  font-size: 1rem;
+  background-color: #111827;
   border-radius: 0.5rem;
-  color: aliceblue;
-  border: none;
-  margin: 0.5rem;
+  color: #aaabad;
+  border: 2px solid #273444;
 }
 
 .textBox {
-  width: 20rem;
+  width: 45rem;
 }
 
 .numberBox {
-  width: 4rem;
+  width: 5rem;
+}
+
+.operation-selector {
+  padding: 0.5rem 1rem;
+  color: #aaabad;
 }
 
 .run-button {
+  height: fit-content;
   padding: 0.5rem 1rem;
-  background-color: #32b50a;
+  background: #6ab4e9da;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,9 +69,86 @@ main {
   font-weight: 600;
 }
 
-.operation-selector {
+.run-button:hover {
+  background: #6ab4e9;
+}
+
+.element-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
   margin: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: #424141;
+  gap: 0.5rem;
+}
+
+.input-label {
+  font-size: 1rem;
+  font-family: "Exo 2", sans-serif;
+  color: #b2c9d8;
+}
+
+.output-section {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #111827;
+  border: 2px solid #273444;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.output-box {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #111827;
+  border-radius: 0.5rem;
+  color: #aaabad;
+  border: none;
+  border: 2px solid #273444;
+}
+
+.visualization-container {
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+  min-height: 30rem;
+  max-height: 30rem;
+  border-radius: 0.5rem;
+  background-color: #0b0f1c;
+  padding: 0.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.error {
+  color: #ff0000;
+}
+
+.ouput-screen {
+  color: antiquewhite;
+}
+
+@media (max-width: 650px) {
+  .content {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .input-section {
+    width: 85%;
+  }
+
+  .run-button {
+    width: 100%;
+  }
+
+  .output-section {
+    width: 85%;
+  }
 }

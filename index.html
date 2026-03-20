@@ -16,15 +16,49 @@
       <div class="name">Columnar<span class="name-part">Visualizer</span></div>
     </header>
     <main>
-      <div class="input-section">
-        <input type="text" class="textBox" />
-        <input type="number" min="1" class="numberBox" id="levelCount" />
-        <select class="operation-selector" name="encryption" id="encryption">
-          <option value="">Select Method</option>
-          <option value="columnar">Encryption</option>
-          <option value="railfence">Decryption</option>
-        </select>
-        <div class="run-button">Process</div>
+      <div class="content">
+        <div class="input-section">
+          <input
+            type="text"
+            class="textBox"
+            placeholder="Input Text"
+            id="inputText"
+          />
+          <input
+            type="number"
+            min="1"
+            class="numberBox"
+            id="level Count"
+            placeholder="column"
+          />
+          <select class="operation-selector" name="encryption" id="operation">
+            <option value="">Select Method</option>
+            <option value="encryption">Encryption</option>
+            <option value="decryption">Decryption</option>
+          </select>
+
+          <div class="run-button" id="runButton">Process</div>
+        </div>
+        <div class="output-section">
+          <input
+            type="text"
+            class="output-box"
+            placeholder="Output Text"
+            id="outputText"
+          />
+          <input
+            type="text"
+            class="output-box"
+            placeholder="Random Order"
+            id="outputText"
+          />
+          <div class="visualization-container" id="visualizationBox">
+            <div class="error" id="errorMessage"></div>
+            <div class="ouput-screen" id="visualOutput">
+              Waiting for input....
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
