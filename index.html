@@ -3,12 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
+    <title>ColumnarVisualizer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="name">Columnar<span class="name-part">Visualizer</span></div>
+    </header>
+    <main>
+      <div class="input-section">
+        <input type="text" class="textBox" />
+        <input type="number" min="1" class="numberBox" id="levelCount" />
+        <select class="operation-selector" name="encryption" id="encryption">
+          <option value="">Select Method</option>
+          <option value="columnar">Encryption</option>
+          <option value="railfence">Decryption</option>
+        </select>
+        <div class="run-button">Process</div>
+      </div>
+    </main>
+
+    <!-- Social links  -->
+    <footer>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/rohan-korake-720848342/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Rohan-Korake" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:rohannkorake@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="src/main.js"></script>
   </body>
 </html>

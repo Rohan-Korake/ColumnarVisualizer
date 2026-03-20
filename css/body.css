@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  background: linear-gradient(135deg, #0a0a0a, #111827, #000000);
+}
+
+.name {
+  color: #00bfff;
+  font-size: 2rem;
+  margin: 1rem;
+  font-family: "Exo 2", sans-serif;
+}
+
+.name-part {
+  color: #39ff14;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.textBox,
+.numberBox {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #424141;
+  border-radius: 0.5rem;
+  color: aliceblue;
+  border: none;
+  margin: 0.5rem;
+}
+
+.textBox {
+  width: 20rem;
+}
+
+.numberBox {
+  width: 4rem;
+}
+
+.run-button {
+  padding: 0.5rem 1rem;
+  background-color: #32b50a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "Inter", "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.operation-selector {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #424141;
+  padding: 0.5rem;
+}
