@@ -11,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
+
   <body>
     <header>
       <div class="name">Columnar<span class="name-part">Visualizer</span></div>
@@ -22,40 +23,50 @@
             type="text"
             class="textBox"
             placeholder="Input Text"
+            required
             id="inputText"
           />
+
           <input
             type="number"
             min="1"
             class="numberBox"
-            id="level Count"
+            id="levelCount"
+            required
             placeholder="column"
           />
-          <select class="operation-selector" name="encryption" id="operation">
+
+          <select
+            class="operation-selector"
+            name="encryption"
+            id="operation"
+            required
+          >
             <option value="">Select Method</option>
             <option value="encryption">Encryption</option>
             <option value="decryption">Decryption</option>
           </select>
 
-          <div class="run-button" id="runButton">Process</div>
+          <button class="run-button" type="submit" id="runButton">
+            Process
+          </button>
         </div>
         <div class="output-section">
-          <input
-            type="text"
-            class="output-box"
-            placeholder="Output Text"
-            id="outputText"
-          />
-          <input
-            type="text"
-            class="output-box"
-            placeholder="Random Order"
-            id="outputText"
-          />
+          <div class="output-field" id="outputText">Output Text</div>
+          <div class="output-field" id="outputText">Random Order</div>
+
           <div class="visualization-container" id="visualizationBox">
             <div class="error" id="errorMessage"></div>
             <div class="ouput-screen" id="visualOutput">
               Waiting for input....
+            </div>
+            <div class="box-container" id="boxContainer">
+              <!-- <div class="box">R</div>
+              <div class="box">R</div>
+              <div class="box">R</div>
+              <div class="box">R</div>
+              <div class="box">R</div>
+              <div class="box">R</div> -->
             </div>
           </div>
         </div>
@@ -80,6 +91,6 @@
       </div>
     </footer>
 
-    <script src="src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

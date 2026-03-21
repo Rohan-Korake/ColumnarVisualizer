@@ -17,11 +17,11 @@ footer {
   gap: 1rem;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  background: #424141;
+  background: #111827;
 }
 
 .social-links a {
-  color: white;
+  color: #c0c1c2;
   font-size: 1.5rem;
   transition:
     transform 0.2s,
